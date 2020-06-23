@@ -26,8 +26,8 @@
                     <td>{{book.title}}</td>
                     <td>
                         <button type="button" class="btn btn-success" @click="editBook(book)">Edit</button>
-                        <button type="button" class="btn btn-danger" @click="deleteBook(book.id,false)">Soft Delete</button>
-                        <button type="button" class="btn btn-warning" @click="deleteBook(book.id, true)">Hard Delete</button>
+                        <button type="button" class="btn btn-danger" @click="deleteBook(book.id,'soft')">Soft Delete</button>
+                        <button type="button" class="btn btn-warning" @click="deleteBook(book.id,'hard')">Hard Delete</button>
 
                     </td>
                 </tr>

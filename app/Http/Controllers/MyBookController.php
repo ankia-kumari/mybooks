@@ -60,17 +60,17 @@ class MyBookController extends Controller
 
     }
 
-    public function destroy($id,$type=false){
+    public function destroy($id,$type="soft"){
 
         $book = Book::findOrFail($id);
 
         DB::beginTransaction();
         $user = User::find(auth()->id());
 
-        if($type) {
+        if($type == "hard") {
 
             if($book->forceDelete()) {
-                DB::commit();
+            DB::commit();
                 $user->notify(new MyBookNotification(ucfirst($book->title).' has been deleted forever from your book list'));
                 return new MyBookResource($book);
             }

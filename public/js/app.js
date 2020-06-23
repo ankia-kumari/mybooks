@@ -6787,7 +6787,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, "\n.fade-enter-active[data-v-f348271a],\n.fade-leave-active[data-v-f348271a] {\n    transition-duration: 0.2s;\n    transition-property: opacity;\n    transition-timing-function: ease;\n}\n.fade-enter[data-v-f348271a],\n.fade-leave-active[data-v-f348271a] {\n    opacity: 0\n}\n.container[data-v-f348271a]{\n    padding:0px;\n    width:88%;\n}\n#nav-mobile a[data-v-f348271a]:hover{\n    text-decoration: none !important;\n    color:white;\n}\n#nav-mobile a[data-v-f348271a]:focus{\n    text-decoration: none !important;\n    color:white;\n    background-color:rgba(0,0,0,0.1);\n}\n#nav-mobile2 a[data-v-f348271a]:hover{\n    text-decoration: none !important;\n    color:white;\n}\n#nav-mobile2 a[data-v-f348271a]:focus{\n    text-decoration: none !important;\n    color:white;\n    background-color:rgba(0,0,0,0.1);\n}\n.page-footer[data-v-f348271a]{\n    padding-top:0px;\n    position:fixed;\n    bottom:0;\n    width:100%;\n    z-index: 999;\n}\n.github[data-v-f348271a]\n{\n    font-size:25px;\n}\n.github[data-v-f348271a]:hover{\n    color:white;\n}\n.github[data-v-f348271a]:focus{\n    color:white;\n}\n", ""]);
+exports.push([module.i, "\n.fade-enter-active[data-v-f348271a],\n.fade-leave-active[data-v-f348271a] {\n    transition-duration: 0.2s;\n    transition-property: opacity;\n    transition-timing-function: ease;\n}\n.fade-enter[data-v-f348271a],\n.fade-leave-active[data-v-f348271a] {\n    opacity: 0\n}\n.container[data-v-f348271a]{\n    padding:0px;\n    width:88%;\n}\n#nav-mobile a[data-v-f348271a]:hover{\n    text-decoration: none !important;\n    color:white;\n}\n#nav-mobile a[data-v-f348271a]:focus{\n    text-decoration: none !important;\n    color:white;\n    background-color:rgba(0,0,0,0.1);\n}\n#nav-mobile2 a[data-v-f348271a]:hover{\n    text-decoration: none !important;\n    color:white;\n}\n#nav-mobile2 a[data-v-f348271a]:focus{\n    text-decoration: none !important;\n    color:white;\n    background-color:rgba(0,0,0,0.1);\n}\n.page-footer[data-v-f348271a]{\n    padding-top:0px;\n    position:fixed;\n    bottom:0;\n    width:100%;\n    z-index: 999;\n}\n", ""]);
 
 // exports
 
@@ -38807,7 +38807,7 @@ var render = function() {
                       attrs: { type: "button" },
                       on: {
                         click: function($event) {
-                          return _vm.deleteBook(book.id, false)
+                          return _vm.deleteBook(book.id, "soft")
                         }
                       }
                     },
@@ -38821,7 +38821,7 @@ var render = function() {
                       attrs: { type: "button" },
                       on: {
                         click: function($event) {
-                          return _vm.deleteBook(book.id, true)
+                          return _vm.deleteBook(book.id, "hard")
                         }
                       }
                     },
