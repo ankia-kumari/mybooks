@@ -32,6 +32,8 @@ generate APP_KEY
 run this command to create tables
 - php artisan migrate
 
+run this to generate outh key for passport auth:
+- php artisan passport:install
 
 to run the application
 - php artisan serve
